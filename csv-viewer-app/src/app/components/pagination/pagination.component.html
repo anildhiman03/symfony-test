@@ -1,0 +1,7 @@
+<!-- src/app/components/pagination/pagination.component.html -->
+<div class="pagination-container">
+    <button mat-button (click)="changePage(currentPage - 1)" [disabled]="currentPage <= 1">Previous</button>
+    <span>Page {{ currentPage }} of {{ totalPages }}</span>
+    <button mat-button (click)="changePage(currentPage + 1)" [disabled]="currentPage >= totalPages">Next</button>
+  </div>
+  
